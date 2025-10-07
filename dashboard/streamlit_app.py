@@ -3,7 +3,8 @@ import requests
 import networkx as nx
 import matplotlib.pyplot as plt
 
-API = 'http://localhost:8000'
+# API = 'http://localhost:8000'
+API = "https://llm-misuse-prototype.onrender.com"
 
 st.title('LLM Misuse Detection - Prototype Dashboard')
 
