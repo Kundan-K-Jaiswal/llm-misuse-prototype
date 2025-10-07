@@ -1,0 +1,15 @@
+fastapi
+uvicorn[standard]
+transformers
+torch
+sentencepiece
+scikit-learn
+pandas
+numpy
+networkx
+streamlit
+python-multipart
+cryptography
+requests
+matplotlib
+plotly
