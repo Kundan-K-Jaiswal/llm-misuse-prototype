@@ -92,7 +92,7 @@ def repetition_score(sentences):
 
 def punctuation_density(text):
     if not text: return 0
-    puncts = re.findall(r'[.,;:!?"'()\-]', text)
+    puncts = re.findall(r'[.,;:!?"()\-]', text)
     return len(puncts) / len(text)
 
 def stopword_ratio(words):
