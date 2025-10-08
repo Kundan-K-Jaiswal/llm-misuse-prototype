@@ -20,7 +20,7 @@ text = st.text_area('Paste content to analyze', height=150)
 if st.button('Detect'):
     payload = {'id': 'ui-'+str(abs(hash(text)))[:8], 'text': text, 'source': 'ui'}
     try:
-        r = requests.post(API + '/detect', json=payload, timeout=5)
+        r = requests.post(API + '/detect', json=payload, timeout=30)
         st.json(r.json())
     except Exception as e:
         st.error(str(e))
